@@ -1,0 +1,7 @@
+#bannerimage {
+    width: 100%;
+    background-image: url(https://cdn1.vectorstock.com/i/1000x1000/09/80/online-shopping-banner-vector-17230980.jpg);
+    height: 405px;
+    background-color: purple;
+    background-position: center;
+  }
