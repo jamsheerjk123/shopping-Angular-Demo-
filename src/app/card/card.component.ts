@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -8,7 +8,29 @@ import { Component, OnInit, Input } from '@angular/core';
 
 
 export class CardComponent  {
+ 
+
   @Input() title;
   @Input() imageUrl;
+  @Input() index;
+
+  
+ 
+
+
+  @Output () liked = new EventEmitter()
+  @Output () deleted = new EventEmitter()
+
+
+  likeclicked(){
+
+    this.liked.emit()
+
+  }
+  deleteProduct(index){
+    this.deleted.emit(index)    
+
+  }
+
 }
 

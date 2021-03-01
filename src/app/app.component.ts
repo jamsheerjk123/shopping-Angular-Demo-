@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopping';
+  likecount=0;
   data=[
     {
     title:"Sony Camera",
@@ -29,4 +30,17 @@ export class AppComponent {
     imageUrl:"https://images.unsplash.com/photo-1614292132590-1c1901c902c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80"
   },
 ]
+
+  likeIncrement(){
+    this.likecount++
+
+} 
+  delproduct(index){
+
+    this.data.splice(index,1)
+  }
+
+
+
+
 }

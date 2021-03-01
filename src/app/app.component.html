@@ -1,5 +1,17 @@
+<app-nav></app-nav>
+
+
+<router-outlet>
+  
+   
+</router-outlet>
 <app-home></app-home>
 
-<app-card *ngFor ="let i of data" [title]="i.title" [imageUrl]="i.imageUrl"></app-card>
+
+<app-card *ngFor ="let i of data ;let j = index" [title]="i.title" [imageUrl]="i.imageUrl" [index]="j" (liked)="likeIncrement()" (deleted)="delproduct($event)"  >
+    
+</app-card>
+<app-about></app-about>
 <!-- <app-button></app-button> -->
+
 

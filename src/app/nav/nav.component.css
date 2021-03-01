@@ -1,0 +1,13 @@
+ul, li{
+
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+
+}
+ul {
+    background-color: cadetblue;
+    padding: 20px;
+    width: 100%;
+
+}

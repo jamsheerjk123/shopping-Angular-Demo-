@@ -3,9 +3,11 @@
     <h3>
          {{ title }}
     </h3>
-    <img [src]="imageUrl" alt="No image">
+    <img class="imglength" [src]="imageUrl" alt="No image">
     <p>
         Product Description
     </p>
+    <button (click)="likeclicked()"> Like </button>
+    <button (click)="deleteProduct(index)"> Delete </button>
 
 </div>
